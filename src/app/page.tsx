@@ -1,5 +1,4 @@
 import ProfileSidebar from "../components/ProfileSidebar";
-import PostForm from "../components/PostForm";
 import Wall from "../components/Wall";
 
 export default function Home() {

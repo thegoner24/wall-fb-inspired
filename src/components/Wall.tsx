@@ -21,7 +21,7 @@ export default function Wall() {
     fetchPosts();
     const subscription = supabase
       .channel('public:posts')
-      .on('postgres_changes', { event: '*', schema: 'public', table: 'posts' }, payload => {
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'posts' }, () => {
         fetchPosts();
       })
       .subscribe();
